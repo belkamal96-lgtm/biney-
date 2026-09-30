@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-script: 'Great Vibes', cursive;
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFF9F6;
+    color: #2D1822;
+    overflow-x: hidden;
+  }
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Custom glow and romantic gradients */
+.bg-romantic-gradient {
+  background: radial-gradient(circle at 50% 30%, #FFE8EE 0%, #FFF5F7 50%, #FFF9F6 100%);
+}
+
+.bg-burgundy-night {
+  background: radial-gradient(ellipse at bottom, #2B0716 0%, #17040C 70%, #0D0207 100%);
+}
+
+.text-rose-gold {
+  color: #B76E79;
+}
+
+.border-rose-gold {
+  border-color: #E8B4B8;
+}
+
+.shadow-romantic {
+  box-shadow: 0 10px 30px -10px rgba(183, 110, 121, 0.25), 0 4px 12px -2px rgba(232, 140, 166, 0.15);
+}
+
+.shadow-romantic-lg {
+  box-shadow: 0 20px 40px -15px rgba(183, 110, 121, 0.35), 0 8px 24px -4px rgba(232, 140, 166, 0.2);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 25px rgba(232, 140, 166, 0.45);
+}
+
+.shadow-gold-glow {
+  box-shadow: 0 0 30px rgba(224, 169, 109, 0.4);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFF5F7;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8B4B8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C97A8E;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1.5deg);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+.animate-float-gentle {
+  animation: float-gentle 4s ease-in-out infinite;
+}

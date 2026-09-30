@@ -1,0 +1,6 @@
+{
+  "name": "For Binita - With All My Love",
+  "description": "A magical, romantic interactive love gift website dedicated to Binita with love letters, reasons, memories, promises, and surprises.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
